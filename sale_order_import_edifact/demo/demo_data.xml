@@ -113,4 +113,13 @@
         <field name="default_code">1076</field>
         <field name="categ_id" ref="product.product_category_all" />
     </record>
+
+    <record id="test_package" model="product.packaging">
+        <field name="name">Package EDIFACT Demo 1</field>
+        <field name="product_id" ref='product.product_delivery_02' />
+        <field name="sales" eval="True" />
+        <field name="qty">12</field>
+        <field name="barcode">PACKDEMO1</field>
+    </record>
+    
 </odoo>
